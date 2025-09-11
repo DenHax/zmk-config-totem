@@ -6,20 +6,22 @@
 
 # ZMK CONFIG FOR THE TOTEM SPLIT KEYBOARD
 
-[Here](https://github.com/GEIGEIGEIST/totem) you can find the hardware files and build guide.\
-[Here](https://github.com/GEIGEIGEIST/qmk-config-totem) you can find the QMK config for the TOTEM.
-
 TOTEM is a 38 key column-staggered split keyboard running [ZMK](https://zmk.dev/) or [QMK](https://docs.qmk.fm/). It's meant to be used with a SEEED XIAO BLE or RP2040.
-
 
 ![TOTEM layout](/docs/images/TOTEM_layout.svg)
 
+Layers:
 
+- Base: QWERTY
+
+- Nav: arrows, media
+
+- Symbols: numbers, symblos
+
+- Game/Work: todo
 
 ## HOW TO USE
 
-- fork this repo
-- `git clone` your repo, to create a local copy on your PC (you can use the [command line](https://www.atlassian.com/git/tutorials) or [github desktop](https://desktop.github.com/))
 - adjust the totem.keymap file (find all the keycodes on [the zmk docs pages](https://zmk.dev/docs/codes/))
 - `git push` your repo to your fork
 - on the GitHub page of your fork navigate to "Actions"
@@ -28,3 +30,7 @@ TOTEM is a 38 key column-staggered split keyboard running [ZMK](https://zmk.dev/
 - the keyboard should now appear as a mass storage device
 - drag'n'drop the `totem_left-seeeduino_xiao_ble-zmk.uf2` file from the archive onto the storage device
 - repeat this process with the right half and the `totem_right-seeeduino_xiao_ble-zmk.uf2` file.
+
+Thanks: ![GEIST](https://github.com/GEIGEIGEIST/TOTEM)
+
+&Copyright (c) 2025  DenHax
