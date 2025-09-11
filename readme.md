@@ -33,4 +33,4 @@ Layers:
 
 Thanks: ![GEIST](https://github.com/GEIGEIGEIST/TOTEM)
 
-&Copyright (c) 2025  DenHax
+&copy (c) 2025  DenHax
