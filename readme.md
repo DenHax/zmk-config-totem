@@ -12,13 +12,33 @@ TOTEM is a 38 key column-staggered split keyboard running [ZMK](https://zmk.dev/
 
 Layers:
 
-- Base: QWERTY
+- Base (toggle): QWERTY
 
 - Nav: arrows, media
 
 - Symbols: numbers, symblos
 
-- Game/Work: todo
+- Adjust: layers control 
+
+- Functional: F-buttons
+
+- Game/Work (toggle): todo
+
+Base -> Adjust -> Game 
+
+Game -> Adjust -> Base
+
+Base/Game -> Symbols
+
+Base/Game -> Functional
+
+Base/Game -> Nav
+
+Branches:
+
+- next: dev branch with new features and optimization
+
+- main: main branch, stable
 
 ## HOW TO USE
 
@@ -33,4 +53,4 @@ Layers:
 
 Thanks: ![GEIST](https://github.com/GEIGEIGEIST/TOTEM)
 
-&copy (c) 2025  DenHax
+&copy; (c) 2025  DenHax
