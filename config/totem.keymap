@@ -42,7 +42,7 @@
         combo_tvp {
             timeout-ms = <100>;
             key-positions = <11 12 13>;
-            bindings = <&tog TVP1>;
+            bindings = <&tog 0>;
         };
 
         ParaLeft {
@@ -207,10 +207,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp Q       &kp W       &kp E        &kp R        &kp T        &kp Y    &kp U        &kp I        &kp O       &kp P
+       &kp Q       &kp W       &kp E        &kp R        &kp T        &kp Y    &kp U        &kp I        &kp O       &lt 4 P
        &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G        &kp H    &mt RSHFT J  &mt RCTRL K  &mt RALT L  &mt RGUI SEMI
 &kp Q  &kp Z       &kp X       &kp C        &kp V        &kp B        &kp N    &kp M        &kp COMMA    &kp DOT     &kp FSLH       &kp BSLH
-                               &kp TAB      &lt NAV TAB  &kp SPACE    &kp RET  &lt SYM ESC  &kp BSPC
+                               &kp TAB      &lt 1 TAB    &kp SPACE    &kp RET  &lt 2 ESC    &kp BSPC
             >;
         };
 
@@ -236,7 +236,7 @@
            &kp AT       &kp AMPERSAND  &kp UP    &kp EQUAL  &kp ASTRK     &kp EXCL   &kp N1  &kp N2   &kp N3  &kp KP_COMMA
            &kp CARET    &kp LEFT       &kp DOWN  &kp RIGHT  &kp HASH      &kp QMARK  &kp N4  &kp N5   &kp N6  &kp KP_DOT
 &kp SLASH  &kp PERCENT  &kp PG_UP      &kp CAPS  &kp PG_DN  &kp DOLLAR    &kp N0     &kp N7  &kp N8   &kp N9  &kp KP_MULTIPLY  &kp BACKSLASH
-                                       &trans    &trans     &trans        &mo ADJ    &none   &kp DEL
+                                       &trans    &trans     &trans        &mo 3      &none   &kp DEL
             >;
         };
 
@@ -302,54 +302,14 @@
         };
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-
-        tvp1_layer {
-            // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-
-            label = "TVP 1";
-
-            // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-            //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-            //             ┃ NEXT FILE ┃ MARK IN   ┃ ROTATE    ┃ MARK OUT  ┃ SHOW SNAP ┃   ┃           ┃           ┃           ┃           ┃           ┃
-            //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-            //             ┃ TVP II    ┃ LEFT      ┃ PAN       ┃ RIGHT     ┃ PLAY/FLIP ┃   ┃           ┃           ┃           ┃           ┃           ┃
-            // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-            // ┃ FULLSCR   ┃ SHIFT     ┃ COPY      ┃ DELETE    ┃ PASTE     ┃ IMG MARK  ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
-            // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-            //                                     ┃           ┃ UNDO/SAVE ┃  SEL/MOV  ┃   ┃           ┃           ┃           ┃
-            //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-
-            bindings = <
-       &kp TAB     &kp I      &kp LC(LALT)  &kp O        &kp LC(F20)    &none  &none  &none  &none  &none
-       &lt TVP2 L  &kp LEFT   &kp LALT      &kp RIGHT    &kp SPACE      &none  &none  &none  &none  &none
-&kp J  &kp LSHFT   &kp LC(C)  &kp BSPC      &kp LC(V)    &kp LC(F19)    &none  &none  &none  &none  &none  &none
-                              &trans        &kp LC(F14)  &kp LC(F13)    &none  &none  &none
-            >;
-        };
-
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-        tvp2_layer {
-            // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-
-            label = "TVP 2";
-
-            // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-            //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-            //             ┃ SOLO      ┃ TOGGLE IN ┃ RESET ROT ┃ TOGGLE OUT┃ TAKE SNAP ┃   ┃           ┃           ┃           ┃           ┃           ┃
-            //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-            //             ┃ ---       ┃ LAST KEY  ┃ NEW KEY   ┃ NEXT KEY  ┃ ENTER     ┃   ┃           ┃           ┃           ┃           ┃           ┃
-            // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-            // ┃           ┃ FULLSCR   ┃ CPY2BRUSH ┃ DEL HEAD  ┃ PSTinPLACE┃ BOOK MARK ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
-            // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-            //                                     ┃           ┃ REDO/SAV1 ┃TRANS/WARP ┃   ┃           ┃           ┃           ┃
-            //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-
+        func {
             bindings = <
-        &kp LC(F18)  &kp LS(I)     &kp LS(HOME)  &kp LS(O)      &kp LS(F)      &trans  &kp F7  &kp F8  &kp F9  &kp F12
-        &trans       &kp LS(LEFT)  &kp LC(F17)   &kp LS(RIGHT)  &kp RET        &trans  &kp F4  &kp F5  &kp F6  &kp F11
-&trans  &kp J        &kp LS(C)     &kp LC(F16)   &kp LS(V)      &kp LC(F15)    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
-                                   &trans        &kp LC(F12)    &kp LC(F11)    &trans  &trans  &trans
+        &kp F1  &kp F2   &kp F3   &kp F4   &trans    &kp LGUI  &kp LEFT_SHIFT  &kp LCTRL  &kp LALT  &trans
+        &kp F5  &kp F6   &kp F7   &kp F8   &trans    &trans    &trans          &trans     &trans    &trans
+&trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans    &trans          &trans     &trans    &trans  &trans
+                         &trans   &trans   &trans    &trans    &trans          &trans
             >;
         };
     };
