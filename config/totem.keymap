@@ -177,28 +177,14 @@
         ru: ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_GUI &kp LCTRL>,
-                <&macro_tap>,
-                <&kp F6>,
-                <&macro_release>,
-                <&kp LGUI &kp LCTRL>;
-
+            bindings = <&kp LG(LC(F6))>;
             label = "RU";
         };
 
         en: en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_GUI &kp LCTRL>,
-                <&macro_tap>,
-                <&kp F5>,
-                <&macro_release>,
-                <&kp LGUI &kp LCTRL>;
-
+            bindings = <&kp LC(LG(F5))>;
             label = "EN";
         };
 
@@ -207,14 +193,8 @@
             #binding-cells = <0>;
             bindings =
                 <&en>,
-                <&macro_press>,
-                <&kp LSHIFT &kp LCTRL>,
                 <&macro_tap>,
-                <&kp U>,
-                <&macro_release>,
-                <&kp LSHIFT &kp LCTRL>,
-                <&macro_tap>,
-                <&kp N0 &kp N0 &kp A &kp B &ru>;
+                <&kp LC(LG(U)) &kp N0 &kp N0 &kp A &kp B &kp ENTER &ru>;
 
             label = "RQUOTE";
         };
@@ -225,7 +205,7 @@
             bindings =
                 <&en>,
                 <&macro_tap>,
-                <&kp LC(LS(U)) &kp N2 &kp N0 &kp N1 &kp N4>;
+                <&kp LC(LS(U)) &kp N0 &kp N0 &kp B &kp B &kp ENTER &ru>;
 
             label = "LQUOTE";
         };
