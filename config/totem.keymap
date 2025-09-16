@@ -155,23 +155,10 @@
             #binding-cells = <0>;
             bindings =
                 <&en>,
-                <&macro_press>,
-                <&kp LSHIFT &kp LCTRL>,
                 <&macro_tap>,
-                <&kp U>,
-                <&macro_release>,
-                <&kp LSHIFT &kp LCTRL>,
-                <&macro_tap>,
-                <&kp N2 &kp N0 &kp N1 &kp N4>;
+                <&kp LC(LS(U)) &kp N2 &kp N0 &kp N1 &kp N4 &kp ENTER &ru>;
 
             label = "DASH";
-        };
-
-        rMulti: rMulti {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none>;
-            label = "RMULTI";
         };
 
         ru: ru {
@@ -194,7 +181,7 @@
             bindings =
                 <&en>,
                 <&macro_tap>,
-                <&kp LC(LG(U)) &kp N0 &kp N0 &kp A &kp B &kp ENTER &ru>;
+                <&kp LC(LS(U)) &kp N0 &kp N0 &kp B &kp B &kp ENTER &ru>;
 
             label = "RQUOTE";
         };
@@ -205,9 +192,20 @@
             bindings =
                 <&en>,
                 <&macro_tap>,
-                <&kp LC(LS(U)) &kp N0 &kp N0 &kp B &kp B &kp ENTER &ru>;
+                <&kp LC(LS(U)) &kp N0 &kp N0 &kp A &kp B &kp ENTER &ru>;
 
             label = "LQUOTE";
+        };
+
+        riMulti: riMulti {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&en>,
+                <&macro_tap>,
+                <&kp LC(LS(U)) &kp N0 &kp N0 &kp D &kp N7 &kp ENTER &ru>;
+
+            label = "RIMULTI";
         };
     };
 
@@ -294,10 +292,10 @@
             //                             '--------+--------+--------'       '--------+--------+--------'
 
             bindings = <
-        &none  &none    &rMulti  &none    &none     &none            &none                 &none                 &none  &none
-        &none  &lQuote  &dash    &rQuote  &trans    &kp PRINTSCREEN  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none  &none
-&trans  &none  &none    &trans   &trans   &trans    &kp C_MUTE       &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &none  &none  &trans
-                        &gif     &en      &ru       &trans           &kp C_PP              &trans
+        &none  &none    &riMulti  &none    &none     &none            &none                 &none                 &none  &none
+        &none  &lQuote  &dash     &rQuote  &trans    &kp PRINTSCREEN  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none  &none
+&trans  &none  &none    &trans    &trans   &trans    &kp C_MUTE       &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &none  &none  &trans
+                        &gif      &en      &ru       &trans           &kp C_PP              &trans
             >;
         };
 
