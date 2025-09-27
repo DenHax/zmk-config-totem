@@ -89,13 +89,13 @@
 
         TildaSign {
             bindings = <&kp TILDE>;
-            key-positions = <10 0>;
+            key-positions = <18 19>;
             timeout-ms = <20>;
         };
 
         GraveSign {
             bindings = <&kp GRAVE>;
-            key-positions = <10 21>;
+            key-positions = <10 11>;
             timeout-ms = <20>;
         };
 
@@ -107,7 +107,7 @@
 
         PlusSign {
             bindings = <&kp PLUS>;
-            key-positions = <4 3>;
+            key-positions = <1 0>;
             timeout-ms = <20>;
         };
 
@@ -119,7 +119,7 @@
 
         PipeSign {
             bindings = <&kp PIPE>;
-            key-positions = <5 6>;
+            key-positions = <8 9>;
             timeout-ms = <20>;
         };
 
@@ -247,7 +247,7 @@
             bindings =
                 <&en>,
                 <&macro_tap>,
-                <&kp LC(LS(U)) &kp N2 &kp N2 &kp N4 &kp N8 &kp RET &ru>;
+                <&kp LC(LS(U)) &kp N2 &kp N2 &kp N1 &kp E &kp RET &ru>;
 
             label = "INFINITY";
         };
