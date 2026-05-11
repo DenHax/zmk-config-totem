@@ -136,11 +136,18 @@
         delete_combo {
             bindings = <&kp DEL>;
             key-positions = <16 17 18>;
+            layers = <2>;
         };
 
         enter_combo {
             bindings = <&kp ENTER>;
             key-positions = <11 12 13>;
+        };
+
+        backspace_combo {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <16 17 18>;
+            layers = <2>;
         };
     };
 
@@ -296,16 +303,16 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp AT       &kp AMPERSAND  &kp UP    &kp EQUAL  &kp ASTRK     &kp EXCL   &kp N1  &kp N2   &kp N3  &kp KP_COMMA
-       &kp CARET    &kp LEFT       &kp DOWN  &kp RIGHT  &kp HASH      &kp QMARK  &kp N4  &kp N5   &kp N6  &kp KP_DOT
-&none  &kp PERCENT  &kp PG_UP      &kp CAPS  &kp PG_DN  &kp DOLLAR    &kp N0     &kp N7  &kp N8   &kp N9  &kp KP_MULTIPLY  &none
-                                   &trans    &trans     &trans        &mo 3      &mo 2   &kp DEL
+       &kp AT       &kp AMPERSAND  &kp UP    &kp EQUAL  &kp ASTRK     &kp EXCL   &kp N1  &kp N2  &kp N3  &kp KP_COMMA
+       &kp CARET    &kp LEFT       &kp DOWN  &kp RIGHT  &kp HASH      &kp QMARK  &kp N4  &kp N5  &kp N6  &kp KP_DOT
+&none  &kp PERCENT  &kp PG_UP      &kp CAPS  &kp PG_DN  &kp DOLLAR    &kp N0     &kp N7  &kp N8  &kp N9  &kp KP_MULTIPLY  &none
+                                   &trans    &trans     &trans        &mo 3      &mo 2   &none
             >;
         };
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-        sim_layer {
+        sym_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
             label = "SYM";
@@ -331,10 +338,10 @@
             //                             '--------+--------+--------'       '--------+--------+--------'
 
             bindings = <
-       &none  &none    &degree  &noEqual  &riMulti     &none            &none                 &none                 &none  &none
-       &none  &lQuote  &dash    &rQuote   &trans       &kp PRINTSCREEN  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none  &none
-&none  &none  &none    &trans   &trans    &infinity    &kp C_MUTE       &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &none  &none  &none
-                       &none    &en       &ru          &trans           &kp C_PP              &trans
+       &none  &none    &degree  &noEqual  &riMulti     &none            &none              &none             &none       &none
+       &none  &lQuote  &dash    &rQuote   &trans       &kp C_MUTE       &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &none       &kp C_BRIGHTNESS_INC
+&none  &none  &none    &trans   &trans    &infinity    &kp PRINTSCREEN  &kp C_PREV         &kp C_PLAY_PAUSE  &kp C_NEXT  &kp C_BRIGHTNESS_DEC  &none
+                       &none    &en       &ru          &trans           &kp C_PP           &none
             >;
         };
 
@@ -390,7 +397,7 @@
        &trans  &kp N1  &kp N2  &kp N3  &kp I     &trans  &trans  &trans  &trans  &trans
        &trans  &kp N4  &kp N5  &kp N6  &kp M     &trans  &trans  &trans  &trans  &trans
 &none  &trans  &kp N7  &kp N8  &kp N9  &kp N0    &trans  &trans  &trans  &trans  &trans  &none
-                       &kp J   &kp K   &kp L     &trans  &trans  &trans
+                       &none   &kp K   &kp L     &kp J   &trans  &none
             >;
         };
     };
