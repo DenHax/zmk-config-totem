@@ -147,7 +147,6 @@
         backspace_combo {
             bindings = <&kp BACKSPACE>;
             key-positions = <16 17 18>;
-            layers = <2>;
         };
     };
 
