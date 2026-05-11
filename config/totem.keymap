@@ -296,10 +296,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-           &kp AT       &kp AMPERSAND  &kp UP    &kp EQUAL  &kp ASTRK     &kp EXCL   &kp N1  &kp N2   &kp N3  &kp KP_COMMA
-           &kp CARET    &kp LEFT       &kp DOWN  &kp RIGHT  &kp HASH      &kp QMARK  &kp N4  &kp N5   &kp N6  &kp KP_DOT
-&kp SLASH  &kp PERCENT  &kp PG_UP      &kp CAPS  &kp PG_DN  &kp DOLLAR    &kp N0     &kp N7  &kp N8   &kp N9  &kp KP_MULTIPLY  &kp BACKSLASH
-                                       &trans    &trans     &trans        &mo 3      &mo 2   &kp DEL
+       &kp AT       &kp AMPERSAND  &kp UP    &kp EQUAL  &kp ASTRK     &kp EXCL   &kp N1  &kp N2   &kp N3  &kp KP_COMMA
+       &kp CARET    &kp LEFT       &kp DOWN  &kp RIGHT  &kp HASH      &kp QMARK  &kp N4  &kp N5   &kp N6  &kp KP_DOT
+&none  &kp PERCENT  &kp PG_UP      &kp CAPS  &kp PG_DN  &kp DOLLAR    &kp N0     &kp N7  &kp N8   &kp N9  &kp KP_MULTIPLY  &none
+                                   &trans    &trans     &trans        &mo 3      &mo 2   &kp DEL
             >;
         };
 
@@ -331,10 +331,10 @@
             //                             '--------+--------+--------'       '--------+--------+--------'
 
             bindings = <
-        &none  &none    &degree  &noEqual  &riMulti     &none            &none                 &none                 &none  &none
-        &none  &lQuote  &dash    &rQuote   &trans       &kp PRINTSCREEN  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none  &none
-&trans  &none  &none    &trans   &trans    &infinity    &kp C_MUTE       &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &none  &none  &trans
-                        &none    &en       &ru          &trans           &kp C_PP              &trans
+       &none  &none    &degree  &noEqual  &riMulti     &none            &none                 &none                 &none  &none
+       &none  &lQuote  &dash    &rQuote   &trans       &kp PRINTSCREEN  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none  &none
+&none  &none  &none    &trans   &trans    &infinity    &kp C_MUTE       &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &none  &none  &none
+                       &none    &en       &ru          &trans           &kp C_PP              &trans
             >;
         };
 
@@ -357,10 +357,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &sys_reset   &bt BT_CLR  &out OUT_TOG  &trans  &trans    &tog 5  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none
-        &bootloader  &bt BT_NXT  &trans        &trans  &trans    &trans  &bt BT_SEL 3  &bt BT_SEL 4  &none         &none
-&trans  &trans       &bt BT_PRV  &trans        &trans  &trans    &trans  &none         &none         &none         &none  &trans
-                                 &trans        &trans  &trans    &trans  &trans        &trans
+       &sys_reset   &bt BT_CLR  &out OUT_TOG  &trans  &trans    &tog 5  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none
+       &bootloader  &bt BT_NXT  &trans        &trans  &trans    &trans  &bt BT_SEL 3  &bt BT_SEL 4  &none         &none
+&none  &trans       &bt BT_PRV  &trans        &trans  &trans    &trans  &none         &none         &none         &none  &none
+                                &trans        &trans  &trans    &trans  &trans        &trans
             >;
         };
 
@@ -369,10 +369,10 @@
 
         func {
             bindings = <
-        &kp F1  &kp F2   &kp F3   &kp F4   &trans    &kp LGUI  &kp LEFT_SHIFT  &kp LCTRL  &kp LALT  &trans
-        &kp F5  &kp F6   &kp F7   &kp F8   &trans    &trans    &trans          &trans     &trans    &trans
-&trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans    &trans          &trans     &trans    &trans  &trans
-                         &trans   &trans   &trans    &trans    &trans          &trans
+       &kp F1  &kp F2   &kp F3   &kp F4   &trans    &kp LGUI  &kp LEFT_SHIFT  &kp LCTRL  &kp LALT  &trans
+       &kp F5  &kp F6   &kp F7   &kp F8   &trans    &trans    &trans          &trans     &trans    &trans
+&none  &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans    &trans          &trans     &trans    &trans  &none
+                        &trans   &trans   &trans    &trans    &trans          &trans
             >;
         };
 
@@ -380,17 +380,17 @@
             bindings = <
        &lt 6 T    &kp Q  &kp W    &kp E      &kp R        &kp Y    &kp U    &kp I      &kp O    &kp P
        &kp LSHFT  &kp A  &kp S    &kp D      &kp F        &kp H    &kp J    &kp K      &kp L    &kp SEMI
-&kp Z  &kp LCTRL  &kp X  &kp C    &kp V      &kp B        &kp N    &kp M    &kp COMMA  &kp DOT  &kp FSLH  &trans
+&none  &kp LCTRL  &kp X  &kp C    &kp V      &kp B        &kp N    &kp M    &kp COMMA  &kp DOT  &kp FSLH  &none
                          &kp TAB  &lt 1 TAB  &kp SPACE    &kp RET  &kp ESC  &kp BSPC
             >;
         };
 
         game_support {
             bindings = <
-        &trans  &kp N1  &kp N2  &kp N3  &kp I     &trans  &trans  &trans  &trans  &trans
-        &trans  &kp N4  &kp N5  &kp N6  &kp M     &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp N7  &kp N8  &kp N9  &kp N0    &trans  &trans  &trans  &trans  &trans  &trans
-                        &kp J   &kp K   &kp L     &trans  &trans  &trans
+       &trans  &kp N1  &kp N2  &kp N3  &kp I     &trans  &trans  &trans  &trans  &trans
+       &trans  &kp N4  &kp N5  &kp N6  &kp M     &trans  &trans  &trans  &trans  &trans
+&none  &trans  &kp N7  &kp N8  &kp N9  &kp N0    &trans  &trans  &trans  &trans  &trans  &none
+                       &kp J   &kp K   &kp L     &trans  &trans  &trans
             >;
         };
     };
