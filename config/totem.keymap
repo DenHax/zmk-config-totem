@@ -298,7 +298,7 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp AT       &kp AMPERSAND  &kp UP    &kp EQUAL  &kp ASTRK     &kp EXCL   &kp N1  &kp N2  &kp N3  &kp KP_COMMA
+       &kp AT       &kp AMPERSAND  &kp UP    &kp EQUAL  &kp ASTRK     &kp EXCL   &kp N1  &kp N2  &kp N3  &kp BACKSLASH
        &kp CARET    &kp LEFT       &kp DOWN  &kp RIGHT  &kp HASH      &kp QMARK  &kp N4  &kp N5  &kp N6  &kp KP_DOT
 &none  &kp PERCENT  &kp PG_UP      &kp CAPS  &kp PG_DN  &kp DOLLAR    &kp N0     &kp N7  &kp N8  &kp N9  &kp KP_MULTIPLY  &none
                                    &trans    &trans     &trans        &mo 3      &mo 2   &none
